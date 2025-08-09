@@ -1,49 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body {
-  background: white;
-  transition: background 0.5s ease;
-  font-family: Arial, sans-serif;
-  color: #333;
-  margin: 0;
-  padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f9f9f9, #fcefee);
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease;
 }
 
 .container {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #fafafa;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
 }
 
 h1 {
-  text-align: center;
-  color: #f49797;
+    font-size: 2.5em;
+    color: #333;
 }
 
 h2 {
-  margin-top: 30px;
-  color: #f36e6e;
+    font-size: 1.2em;
+    color: #777;
+    font-weight: normal;
 }
 
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
+.about {
+    margin: 20px 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+.buttons {
+    margin-top: 20px;
 }
 
 .btn {
-  display: block;
-  margin: 40px auto 0 auto;
-  padding: 12px 30px;
-  font-size: 1.1rem;
-  color: white;
-  background-color: #f49797;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+    background-color: #f8b4b4;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease, text-decoration 0.3s ease;
+    cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #f36e6e;
+    background-color: #f49797;
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    .container {
+        padding: 20px;
+    }
 }
